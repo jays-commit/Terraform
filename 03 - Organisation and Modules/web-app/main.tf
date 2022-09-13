@@ -36,7 +36,7 @@ module "web_app_1" {
   source = "../web-app-module"
 
   # Input Variables
-  bucket_name      = "web-app-1-devops-directive-web-app-data"
+  bucket_name      = "web-app-1-learn-terraform-web-app-data"
   domain           = "jaycommits-devops.com"
   app_name         = "web-app-1"
   environment_name = "production"
@@ -51,7 +51,7 @@ module "web_app_2" {
   source = "../web-app-module"
 
   # Input Variables
-  bucket_name      = "web-app-2-devops-directive-web-app-data"
+  bucket_name      = "web-app-2-learn-terraform-web-app-data"
   domain           = "anotherjaycommits-devops.com"
   app_name         = "web-app-2"
   environment_name = "production"

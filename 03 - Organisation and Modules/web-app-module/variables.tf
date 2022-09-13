@@ -3,7 +3,7 @@
 variable "region" {
   description = "Default region for provider"
   type        = string
-  default     = "us-west-1"
+  default     = "us-east-1"
 }
 
 variable "app_name" {
