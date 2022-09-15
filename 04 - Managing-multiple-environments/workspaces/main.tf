@@ -39,7 +39,7 @@ module "web_app" {
   environment_name = local.environment_name
   instance_type    = "t2.small"
 
-  #if im in production dns provision zone else id staging/dev use zone that already exist
+  #if in production workspace provision dns zone else if staging/dev use dns zone that already exist
   create_dns_zone  = terraform.workspace == "production" ? true : false
 
   db_name          = "${local.environment_name}mydb" #avoid naming conflicts
