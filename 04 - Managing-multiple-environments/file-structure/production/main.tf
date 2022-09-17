@@ -3,7 +3,7 @@ terraform {
 
   backend "s3" {
     bucket         = "learn-terraform-user-bucket"
-    key            = "04-managing-multiple-environments/global/terraform.tfstate"
+    key            = "04-managing-multiple-environments/production/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-state-locking"
     encrypt        = true
