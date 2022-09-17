@@ -1,2 +1,2 @@
 # Terraform
-Learning how to use Terraform to automate AWS infrastructure
+Using Terraform to automate AWS infrastructure
