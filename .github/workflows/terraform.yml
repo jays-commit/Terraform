@@ -94,7 +94,7 @@ jobs:
           terraform apply -auto-approve
 
       - name: Terraform Apply Staging
-        if: steps.check-tag.outputs.environment == 'staging' && github.event_name = "push'
+        if: steps.check-tag.outputs.environment == 'staging' && github.event_name == "push'
         run: terraform apply -var db_pass=${{secrets.DB_PASS }} -auto-approve
 
       - name: Terraform Apply Production
